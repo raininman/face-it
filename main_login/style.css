@@ -1,0 +1,95 @@
+:root {
+  --text-color: #ffffff;
+}
+
+body {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  min-height: 100%;
+  background-image: url("../assets/bg_gradient.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  color: var(--text-color);
+}
+
+header {
+  background-color: #2f2f2f;
+}
+
+nav {
+  padding: 20px 43px;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  grid-column-gap: 114px;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.profile {
+  align-items: center;
+  gap: 10px;
+}
+
+.profile button{
+  background-color: inherit;
+}
+
+.tournaments {
+  border-radius: 15px;
+  background-color: #3a3a3a;
+  margin: 40px auto;
+  width: 1230px;
+  padding: 40px 110px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.tournament {
+  background-color: #616161;
+  padding: 30px 20px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: max-content 2fr 1fr 1fr 1fr 1fr max-content;
+  justify-content: center;
+  align-items: top;
+  grid-template-rows: 1fr;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.expand{
+  align-self: center;
+  padding-left: 10px;
+}
+
+.divide_section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 15px;
+  justify-items: center;
+}
+
+.divide_section_bottom{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.divide_section_money{
+  color: #F5CE85;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}

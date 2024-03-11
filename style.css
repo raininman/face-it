@@ -1,0 +1,115 @@
+:root {
+  --text-color: #ffffff;
+}
+
+body {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  min-height: 100%;
+  background-image: url("../assets/bg_home_big.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  overflow: hidden;
+}
+
+aside{
+  position: absolute;
+}
+
+.logo {
+  left: 68px;
+  top: 33px;
+}
+
+main {
+  margin-left: 342px;
+  margin-top: 104px;
+}
+
+h1 {
+  font-size: 128px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.transparent_text {
+  color: inherit;
+  letter-spacing: 5px;
+  text-shadow:
+    -0 -5px 1px #ffffff,
+    0 -5px 1px #ffffff,
+    -0 5px 1px #ffffff,
+    0 5px 1px #ffffff,
+    -5px -0 1px #ffffff,
+    5px -0 1px #ffffff,
+    -5px 0 1px #ffffff,
+    5px 0 1px #ffffff,
+    -1px -5px 1px #ffffff,
+    1px -5px 1px #ffffff,
+    -1px 5px 1px #ffffff,
+    1px 5px 1px #ffffff,
+    -5px -1px 1px #ffffff,
+    5px -1px 1px #ffffff,
+    -5px 1px 1px #ffffff,
+    5px 1px 1px #ffffff,
+    -2px -5px 1px #ffffff,
+    2px -5px 1px #ffffff,
+    -2px 5px 1px #ffffff,
+    2px 5px 1px #ffffff,
+    -5px -2px 1px #ffffff,
+    5px -2px 1px #ffffff,
+    -5px 2px 1px #ffffff,
+    5px 2px 1px #ffffff,
+    -3px -5px 1px #ffffff,
+    3px -5px 1px #ffffff,
+    -3px 5px 1px #ffffff,
+    3px 5px 1px #ffffff,
+    -5px -3px 1px #ffffff,
+    5px -3px 1px #ffffff,
+    -5px 3px 1px #ffffff,
+    5px 3px 1px #ffffff,
+    -4px -5px 1px #ffffff,
+    4px -5px 1px #ffffff,
+    -4px 5px 1px #ffffff,
+    4px 5px 1px #ffffff,
+    -5px -4px 1px #ffffff,
+    5px -4px 1px #ffffff,
+    -5px 4px 1px #ffffff,
+    5px 4px 1px #ffffff,
+    -5px -5px 1px #ffffff,
+    5px -5px 1px #ffffff,
+    -5px 5px 1px #ffffff,
+    5px 5px 1px #ffffff,
+    -5px -5px 1px #ffffff,
+    5px -5px 1px #ffffff,
+    -5px 5px 1px #ffffff,
+    5px 5px 1px #ffffff;
+}
+
+.prize{
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 70px;
+  margin-bottom: 15px;
+
+}
+
+.money{
+  font-size: 96px;
+  font-weight: 700;
+  margin-bottom: 67px;
+
+}
+
+main a{
+  color: var(--text-color);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 32px;
+  border: 5px solid #2691DF;
+  border-radius: 15px;
+  padding: 20px 30px;
+}
