@@ -44,11 +44,22 @@
   color: transparent;
 }
 
-
-
 html {
   scroll-behavior: smooth;
   height: 100%;
+  font-size: 16px;
+}
+
+@media (max-width: 1250px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
 }
 
 * {
@@ -113,4 +124,35 @@ a {
     5px -5px 1px #ffffff,
     -5px 5px 1px #ffffff,
     5px 5px 1px #ffffff;
+}
+
+@media (max-width: 1250px) {
+  .transparent_text {
+    letter-spacing: 3px;
+    text-shadow:
+      -0 -2px 1px #ffffff,
+      0 -2px 1px #ffffff,
+      -0 2px 1px #ffffff,
+      0 2px 1px #ffffff,
+      -2px -0 1px #ffffff,
+      2px -0 1px #ffffff,
+      -2px 0 1px #ffffff,
+      2px 0 1px #ffffff,
+      -1px -2px 1px #ffffff,
+      1px -2px 1px #ffffff,
+      -1px 2px 1px #ffffff,
+      1px 2px 1px #ffffff,
+      -2px -1px 1px #ffffff,
+      2px -1px 1px #ffffff,
+      -2px 1px 1px #ffffff,
+      2px 1px 1px #ffffff,
+      -2px -2px 1px #ffffff,
+      2px -2px 1px #ffffff,
+      -2px 2px 1px #ffffff,
+      2px 2px 1px #ffffff,
+      -2px -2px 1px #ffffff,
+      2px -2px 1px #ffffff,
+      -2px 2px 1px #ffffff,
+      2px 2px 1px #ffffff;
+  }
 }

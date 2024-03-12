@@ -12,7 +12,13 @@ body {
   overflow: hidden;
 }
 
-aside{
+@media (max-width: 1050px) {
+  body {
+    background-position: center;
+  }
+}
+
+aside {
   position: absolute;
 }
 
@@ -21,95 +27,141 @@ aside{
   top: 33px;
 }
 
+@media (max-width: 1050px) {
+  aside {
+    position: static;
+  }
+  .logo {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
 main {
-  margin-left: 342px;
-  margin-top: 104px;
+  margin-top: 6.5rem;
+}
+
+@media (max-width: 1050px) {
+  main {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  h1 {
+    font-size: 6rem;
+  }
 }
 
 h1 {
-  font-size: 128px;
+  margin-left: 342px;
+  font-size: 8rem;
   font-weight: 800;
   margin-bottom: 15px;
 }
 
-.transparent_text {
-  color: inherit;
-  letter-spacing: 5px;
-  text-shadow:
-    -0 -5px 1px #ffffff,
-    0 -5px 1px #ffffff,
-    -0 5px 1px #ffffff,
-    0 5px 1px #ffffff,
-    -5px -0 1px #ffffff,
-    5px -0 1px #ffffff,
-    -5px 0 1px #ffffff,
-    5px 0 1px #ffffff,
-    -1px -5px 1px #ffffff,
-    1px -5px 1px #ffffff,
-    -1px 5px 1px #ffffff,
-    1px 5px 1px #ffffff,
-    -5px -1px 1px #ffffff,
-    5px -1px 1px #ffffff,
-    -5px 1px 1px #ffffff,
-    5px 1px 1px #ffffff,
-    -2px -5px 1px #ffffff,
-    2px -5px 1px #ffffff,
-    -2px 5px 1px #ffffff,
-    2px 5px 1px #ffffff,
-    -5px -2px 1px #ffffff,
-    5px -2px 1px #ffffff,
-    -5px 2px 1px #ffffff,
-    5px 2px 1px #ffffff,
-    -3px -5px 1px #ffffff,
-    3px -5px 1px #ffffff,
-    -3px 5px 1px #ffffff,
-    3px 5px 1px #ffffff,
-    -5px -3px 1px #ffffff,
-    5px -3px 1px #ffffff,
-    -5px 3px 1px #ffffff,
-    5px 3px 1px #ffffff,
-    -4px -5px 1px #ffffff,
-    4px -5px 1px #ffffff,
-    -4px 5px 1px #ffffff,
-    4px 5px 1px #ffffff,
-    -5px -4px 1px #ffffff,
-    5px -4px 1px #ffffff,
-    -5px 4px 1px #ffffff,
-    5px 4px 1px #ffffff,
-    -5px -5px 1px #ffffff,
-    5px -5px 1px #ffffff,
-    -5px 5px 1px #ffffff,
-    5px 5px 1px #ffffff,
-    -5px -5px 1px #ffffff,
-    5px -5px 1px #ffffff,
-    -5px 5px 1px #ffffff,
-    5px 5px 1px #ffffff;
+@media (min-width: 2000px) {
+  h1 {
+    margin-bottom: 5vh;
+  }
 }
 
-.prize{
+@media (max-width: 1500px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  h1 {
+    line-height: 120%;
+    margin-left: 15px;
+    font-size: 3rem;
+    margin-bottom: 15vh;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.prize {
+  margin-left: 342px;
   color: var(--text-color);
   font-weight: 700;
-  font-size: 70px;
+  font-size: 4.375rem;
   margin-bottom: 15px;
-
 }
 
-.money{
-  font-size: 96px;
+@media (max-width: 1050px) {
+  .prize {
+    margin-left: 15px;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+}
+
+@media (min-width: 2000px) {
+  .prize {
+    margin-bottom: 3vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .prize {
+    font-size: 1.75rem;
+  }
+}
+
+.money {
+  margin-left: 342px;
+  font-size: 6rem;
   font-weight: 700;
   margin-bottom: 67px;
-
 }
 
-main a{
+@media (max-width: 1050px) {
+  .money {
+    margin-left: 15px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 25vh;
+  }
+}
+
+@media (min-width: 2000px) {
+  .money {
+    margin-bottom: 25vh;
+  }
+}
+
+main a {
   color: var(--text-color);
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
   font-weight: 700;
-  font-size: 32px;
-  border: 5px solid #2691DF;
+  font-size: 2rem;
+  border: 5px solid #2691df;
   border-radius: 15px;
   padding: 20px 30px;
+}
+
+@media (max-width: 1050px) {
+  main a {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 15px;
+  }
 }
