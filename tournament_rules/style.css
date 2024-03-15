@@ -280,13 +280,29 @@ aside ul li {
   border-radius: 15px;
 }
 
+@media (max-width: 1230px) {
+  .tournament {
+    margin: 10px auto;
+    width: calc(100% - 20px);
+  }
+}
+
 .tournament_head {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   background-image: url("../assets/tournament_head_bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-left: 70px;
   padding-top: 8.5rem;
+}
+
+@media (max-width: 1070px) {
+  .tournament_head {
+    padding-left: 10px;
+    padding-top: 4.33rem;
+  }
 }
 
 .status_eta {
@@ -296,9 +312,21 @@ aside ul li {
   margin-bottom: 13px;
 }
 
+@media (max-width: 1070px) {
+  .status_eta {
+    font-size: 0.83rem;
+  }
+}
+
 .tournament_name {
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+@media (max-width: 1070px) {
+  .tournament_name {
+    font-size: 1.166rem;
+  }
 }
 
 .organization {
@@ -323,13 +351,34 @@ aside ul li {
   gap: 5px;
 }
 
+@media (max-width: 1070px) {
+  .organization_name,
+  .organization {
+    font-size: 0.66rem;
+  }
+}
+
 .tournament_menu {
   display: flex;
   gap: 40px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+@media (max-width: 1070px) {
+  .tournament_menu {
+    gap: 20px;
+  }
 }
 
 .tournament_menu a {
   margin-bottom: 15px;
+}
+
+@media (max-width: 1070px) {
+  .tournament_menu a {
+    margin-bottom: 5px;
+  }
 }
 
 .current_tab {
@@ -338,9 +387,21 @@ aside ul li {
   border-bottom: 2px solid #2691df;
 }
 
+@media (max-width: 1070px) {
+  .current_tab {
+    padding-bottom: 3px;
+  }
+}
+
 .tournament_body {
   border-top: 1px solid #696969;
   padding: 30px 70px;
+}
+
+@media (max-width: 1070px) {
+  .tournament_body {
+    padding: 20px 10px;
+  }
 }
 
 .tournament_rules {
@@ -349,9 +410,21 @@ aside ul li {
   padding: 0px 60px 25px 25px;
 }
 
-.rule {
+@media (max-width: 767px) {
+  .tournament_rules {
+    padding: 10px;
+  }
+}
+
+.rule:not(:last-of-type) {
   padding-bottom: 25px;
   border-bottom: 1px solid #696969;
+}
+
+@media (max-width: 767px) {
+  .rule {
+    padding-bottom: 10px;
+  }
 }
 
 .rule h3 {
@@ -359,6 +432,13 @@ aside ul li {
   font-size: 1.25rem;
   padding-top: 25px;
   margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+  .rule h3 {
+    padding-top: 10px;
+    font-size: 1rem;
+  }
 }
 
 .rule p {
@@ -386,20 +466,39 @@ aside ul li {
 .rule p::before {
   content: "– ";
   position: relative;
-  left: -5px;
 }
 
 .rule span::before {
   content: "· ";
   position: relative;
-  left: -5px;
 }
 
-.rule li:first-of-type{
+.rule li:first-of-type {
   margin-top: -20px;
-} 
+}
 
 .rule li {
   font-weight: 500;
   font-size: 1.25rem;
+}
+
+@media (max-width: 767px) {
+  .rule p,
+  .rule span,
+  .rule li {
+    font-size: 0.83rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .rule h3,
+  .rule p,
+  .rule span:last-of-type {
+    margin-bottom: 10px;
+  }
+
+  .rule span:first-of-type,
+  .rule li:first-of-type {
+    margin-top: -10px;
+  }
 }
