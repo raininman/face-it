@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../style/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../style/default.css" />
+  <link rel="stylesheet" type="text/css" href="../style/main.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>Страница турнира обзор</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="../index.html"><img src="../assets/fks_logo.svg" alt="fks logo" height="80" width="80" class="logo"></a>
+      <img src="../assets/nav_burger.svg" alt="fks logo" height="30" width="30" class="nav_burger" id="burger">
+      <ul id="menu">
+        <li><a href="">Главная</a></li>
+        <li><a href="">Матчи</a></li>
+        <li><a href="">Команды</a></li>
+        <li>
+          <div class="dropdown">
+            <span>Таблица</span>
+            <div class="dropdown-content">
+              <a href="../table_players/index.html">Игроки</a>
+              <a href="../table_teams/index.html">Команды</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="../streams/index.html">Трансляции</a></li>
+      </ul>
+      <ul class="profile">
+        <li><a href=""><img src="../assets/message.svg" alt="mail"></a></li>
+        <li><a href=""><img src="../assets/bell.svg" alt="bell"></a></li>
+        <li><a href="">nickname</a></li>
+        <li><a href=""><img src="../assets/mock_avatar.png" alt="avatar" height="70" width="70"
+              class="profile_avatar"></a></li>
+        <div id="sideBurger" class="side_burger">
+          <span class="phone_nav_burger"></span>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <aside id="sideMenu">
+      <h3>nickname</h3>
+      <div class="statistics">
+        <img src="../assets/kd.svg" alt="k/d" height="16.67" width="16.67">
+        <span>1.22</span>
+        <img src="../assets/stats.svg" alt="stats" height="16.67" width="16.67">
+        <span>15</span>
+      </div>
+      <div class="likes">
+        <div>
+          <img src="../assets/sad.svg" alt="sad" height="18" width="18">
+          <span>30% (3)</span>
+        </div>
+        <div>
+          <img src="../assets/happy.svg" alt="happy" height="18" width="18">
+          <span>70% (7)</span>
+        </div>
+      </div>
+      <div class="progress"></div>
+      <ul>
+        <li>
+          <img src="../assets/user.svg" alt="user" height="20" width="20">
+          <span>Профиль</span>
+        </li>
+        <li>
+          <img src="../assets/matches.svg" alt="matches" height="20" width="20">
+          <span>Мои матчи</span>
+        </li>
+        <li>
+          <img src="../assets/settings.svg" alt="settings" height="20" width="20">
+          <span>Настройки</span>
+        </li>
+        <li>
+          <img src="../assets/exit.svg" alt="exit" height="20" width="20">
+          <span>Выход</span>
+        </li>
+      </ul>
+    </aside>
+    <section class="team">
+      <article class="team_header">
+        <div class="avatar">
+          <img src="../assets/mock_team.png" alt="team avatar" height="70" width="70">
+          <span class="team_title">packofuf</span>
+          <span class="tag">pack</span>
+        </div>
+        <div class="menu">
+          <a href="../team_overview/index.html">
+            <span class="current_tab">Состав</span>
+          </a>
+          <a href="../team_tournaments_active/index.html">
+            <span>Турниры</span>
+          </a>
+        </div>
+      </article>
+      <article class="team_body">
+        <div class="aside_menu">
+          <a href="../team_overview/index.html"><span>Текущий</span></a>
+          <a href="../team_history/index.html" class="current_menu_tab"><span>История</span></a>
+        </div>
+        <div class="team_stat">
+          <span class="team_stat_title">История</span>
+          <span class="list_of_all">Список всех участников команды</span>
+          <div class="stat_table">
+            <div class="table_header">
+              <span>Игрок</span>
+              <span>Топ</span>
+              <span>% побед</span>
+              <span>У/С</span>
+              <span>Период</span>
+              <span class="table_header_mock"></span>
+            </div>
+            <div class="table_content">
+              <div class="name_avatar">
+                <img src="../assets/mock_avatar.png" alt="avatar" height="42" width="42">
+                <span>Имя и Фамилия</span>
+              </div>
+              <span>-</span>
+              <span>-</span>
+              <span>-</span>
+              <span>24 фев. — н.в. </span>
+              <img src="../assets/arrow_right.svg" alt="expand" height="18" width="18" class="expand">
+            </div>
+            <div class="table_content">
+              <div class="name_avatar">
+                <img src="../assets/mock_avatar.png" alt="avatar" height="42" width="42">
+                <span>Имя и Фамилия</span>
+              </div>
+              <span>-</span>
+              <span>-</span>
+              <span>-</span>
+              <span>24 фев. — н.в. </span>
+              <img src="../assets/arrow_right.svg" alt="expand" height="18" width="18" class="expand">
+            </div>
+            <div class="table_content">
+              <div class="name_avatar">
+                <img src="../assets/mock_avatar.png" alt="avatar" height="42" width="42">
+                <span>Имя и Фамилия</span>
+              </div>
+              <span>-</span>
+              <span>-</span>
+              <span>-</span>
+              <span>24 фев. — н.в. </span>
+              <img src="../assets/arrow_right.svg" alt="expand" height="18" width="18" class="expand">
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="../app.js"></script>
+</body>
+
+</html>
