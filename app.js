@@ -4,6 +4,9 @@ const overlay = document.getElementById('menu');
 const burgerSideMenu = document.getElementById('sideBurger');
 const sideMenu = document.getElementById('sideMenu');
 
+const menuBtn = document.getElementById('modeDropBtn');
+const modeMenu = document.getElementById('modeMenu');
+
 burgerMenu.addEventListener('click', function () {
   this.classList.toggle('close');
   overlay.classList.toggle('overlay');
@@ -15,4 +18,9 @@ burgerMenu.addEventListener('click', function () {
 burgerSideMenu.addEventListener('click', function () {
   this.classList.toggle('close');
   sideMenu.classList.toggle('overlay');
+});
+
+menuBtn.addEventListener('click', function () {
+  this.classList.toggle('close');
+  modeMenu.classList.toggle('overlay');
 });

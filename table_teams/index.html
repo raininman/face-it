@@ -82,69 +82,97 @@
         </li>
       </ul>
     </aside>
-    <section class="tournament">
-      <div class="tournament_head">
-        <div class="status_eta">
-          <span class="status">ОЖИДАЕТСЯ</span>
-          <span>●</span>
-          <span class="eta">ЧЕРЕЗ 30 МИНУТ, 21:00 GMT +3</span>
+    <section class="table_menu">
+      <article class="menu">
+        <div class="menu_header">
+          <span class="quantity">5v5</span>
+          <span class="mode">Основной режим</span>
+          <button class="dropbtn" id="modeDropBtn"> </button>
         </div>
-        <span class="tournament_name">Название турнира</span>
-        <div class="organization">
-          <span>Организовано </span>
-          <span class="organization_name">ФКС РК <img src="../assets/verified.svg" alt="verified mark" height="23"
-              width="23"></span>
+        <div class="menu_content" id="modeMenu">
+          <a href="#" class="current_mode">5v5</a>
+          <a href="#">2v2</a>
+          <a href="#">1v1</a>
         </div>
-        <nav class="tournament_menu">
-          <a href="../tournament_review/index.html"><span class="current_tab">Обзор</span></a>
-          <a href="../tournament_rules/index.html"><span>Правила</span></a>
-          <a href="../tournament_teams/index.html"><span>Команды</span></a>
-          <a href="../tournament_bracket/index.html"><span>Сетка</span></a>
-        </nav>
-      </div>
-      <div class="tournament_body">
-        <section class="requirements">
-          <article class="data">
-            <img src="../assets/command_size.svg" alt="command size" height="45" width="45">
-            <h4>Размер команды</h4>
-            <span>5v5</span>
-          </article>
-          <article class="data">
-            <img src="../assets/prize_fund.svg" alt="prize fund" height="45" width="45">
-            <h4>Призовой фонд</h4>
-            <div class="data_money">
-              <img src="../assets/ruble.svg" alt="ruble" height="23" width="23">
-              <span>250.000</span>
-            </div>
-          </article>
-          <article class="data">
-            <img src="../assets/reg_time.svg" alt="reg time" height="45" width="45">
-            <h4>Регистрация</h4>
-            <span>1 мар. 20:30 - 20:45 GMT +3</span>
-          </article>
-          <article class="data">
-            <img src="../assets/start_date.svg" alt="start date" height="45" width="45">
-            <h4>Начало</h4>
-            <span>1 мар. в 21:00 GMT +3</span>
-          </article>
-        </section>
-        <section class="sign_up_for_tournament">
-          <button>Присоединиться к турниру</button>
-        </section>
-        <section class="information">
-          <h3>Информация</h3>
-          <span>Краткая информация о турнире</span>
-        </section>
-        <section class="prize">
-          <h3>Призы</h3>
-          <ul>
-            <li>1 место – 125.000 рублей</li>
-            <li>2 место – 70.000 рублей</li>
-            <li>3 место – 35.000 рублей</li>
-            <li>4 место – 20.000 рублей</li>
-          </ul>
-        </section>
-      </div>
+      </article>
+      <article class="table">
+        <table>
+          <thead>
+            <tr class="table_header">
+              <th>№</th>
+              <th>Команда</th>
+              <th>Матчи</th>
+              <th>Выигрыши</th>
+              <th>Поражения</th>
+              <th>ВР</th>
+              <th>ПР</th>
+              <th>Очки</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table_content">
+              <td>1</td>
+              <td>
+                <div class="team_avatar">
+                  <img src="../assets/mock_team.png" alt="team avatar" height="60" width="50">
+                  <span>team name</span>
+                </div>
+              </td>
+              <td>25</td>
+              <td>15</td>
+              <td>10</td>
+              <td>55</td>
+              <td>30</td>
+              <td>15</td>
+            </tr>
+            <tr class="table_content">
+              <td>2</td>
+              <td>
+                <div class="team_avatar">
+                  <img src="../assets/mock_team.png" alt="team avatar" height="60" width="50">
+                  <span>team name</span>
+                </div>
+              </td>
+              <td>25</td>
+              <td>15</td>
+              <td>10</td>
+              <td>55</td>
+              <td>30</td>
+              <td>15</td>
+            </tr>
+            <tr class="table_content">
+              <td>3</td>
+              <td>
+                <div class="team_avatar">
+                  <img src="../assets/mock_team.png" alt="team avatar" height="60" width="50">
+                  <span>team name</span>
+                </div>
+              </td>
+              <td>25</td>
+              <td>15</td>
+              <td>10</td>
+              <td>55</td>
+              <td>30</td>
+              <td>15</td>
+            </tr>
+            <tr class="table_content">
+              <td>4</td>
+              <td>
+                <div class="team_avatar">
+                  <img src="../assets/mock_team.png" alt="team avatar" height="60" width="50">
+                  <span>team name</span>
+                </div>
+              </td>
+              <td>25</td>
+              <td>15</td>
+              <td>10</td>
+              <td>55</td>
+              <td>30</td>
+              <td>15</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
     </section>
   </main>
   <script src="../app.js"></script>
