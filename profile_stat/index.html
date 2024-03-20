@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../style/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../style/default.css" />
+  <link rel="stylesheet" type="text/css" href="../style/main.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>Профиль</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="../index.html"><img src="../assets/fks_logo.svg" alt="fks logo" height="80" width="80" class="logo"></a>
+      <img src="../assets/nav_burger.svg" alt="fks logo" height="30" width="30" class="nav_burger" id="burger">
+      <ul id="menu">
+        <li><a href="">Главная</a></li>
+        <li><a href="">Матчи</a></li>
+        <li><a href="../teams/index.html">Команды</a></li>
+        <li>
+          <div class="dropdown">
+            <span>Таблица</span>
+            <div class="dropdown-content">
+              <a href="../table_players/index.html">Игроки</a>
+              <a href="../table_teams/index.html">Команды</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="../streams/index.html">Трансляции</a></li>
+      </ul>
+      <ul class="profile">
+        <li><a href=""><img src="../assets/message.svg" alt="mail"></a></li>
+        <li><a href=""><img src="../assets/bell.svg" alt="bell"></a></li>
+        <li><a href="../profile_stat/index.html">nickname</a></li>
+        <li><a href="../profile_stat/index.html"><img src="../assets/mock_avatar.png" alt="avatar" height="70"
+              width="70" class="profile_avatar"></a></li>
+        <div id="sideBurger" class="side_burger">
+          <span class="phone_nav_burger"></span>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <aside id="sideMenu">69
+      <h3>nickname</h3>
+      <div class="statistics">
+        <img src="../assets/kd.svg" alt="k/d" height="16.67" width="16.67">
+        <span>1.22</span>
+        <img src="../assets/stats.svg" alt="stats" height="16.67" width="16.67">
+        <span>15</span>
+      </div>
+      <div class="likes">
+        <div>
+          <img src="../assets/sad.svg" alt="sad" height="18" width="18">
+          <span>30% (3)</span>
+        </div>
+        <div>
+          <img src="../assets/happy.svg" alt="happy" height="18" width="18">
+          <span>70% (7)</span>
+        </div>
+      </div>
+      <div class="progress"></div>
+      <ul>
+        <li>
+          <img src="../assets/user.svg" alt="user" height="20" width="20">
+          <span>Профиль</span>
+        </li>
+        <li>
+          <img src="../assets/matches.svg" alt="matches" height="20" width="20">
+          <span>Мои матчи</span>
+        </li>
+        <li>
+          <img src="../assets/settings.svg" alt="settings" height="20" width="20">
+          <span>Настройки</span>
+        </li>
+        <li>
+          <img src="../assets/exit.svg" alt="exit" height="20" width="20">
+          <span>Выход</span>
+        </li>
+      </ul>
+    </aside>
+    <section class="profile_section">
+      <article class="profile_header">
+        <div class="avatar">
+          <img src="../assets/mock_avatar.png" alt="team avatar" height="160" width="160">
+        </div>
+        <div class="profile_info">
+          <div class="profile_info_top">
+            <span class="profile_nickname">nickname</span>
+            <div class="profile_registration">
+              <span>Зарегистрирован:</span>
+              <span>28 февраля 2024 г.</span>
+            </div>
+            <div class="profile_mode">
+              <div class="profile_mode_menu">
+                <img src="../assets/battle.svg" alt="mode" height="22" width="22">
+                <span>Режим</span>
+                <span>5v5</span>
+                <button class="dropbtn" id="modeDropBtn"></button>
+              </div>
+              <div class="menu_content" id="modeMenu">
+                <a href="#" class="current_mode">5v5</a>
+                <a href="#">2v2</a>
+                <a href="#">1v1</a>
+              </div>
+            </div>
+            <div class="profile_leaderboard">
+              <img src="../assets/stats.svg" alt="top" height="22" width="22">
+              <span>Место в топе</span>
+              <span>10</span>
+            </div>
+            <div class="profile_matches">
+              <img src="../assets/matches.svg" alt="matches" height="22" width="22">
+              <span>Матчи</span>
+              <span>20</span>
+            </div>
+          </div>
+          <div class="profile_info_bottom">
+            <div class="profile_info_bottom_left">
+              <span class="profile_name">Иван Иванов</span>
+              <span class="profile_team">Название команды</span>
+              <span class="profile_age">25 лет</span>
+            </div>
+            <a href="#" class="steam_href">
+              <button class="steam_button">
+                <span>Профиль в STEAM</span>
+                <img src="../assets/steam.svg" alt="steam login">
+              </button>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="profile_menu">
+        <div class="profile_menu_left">
+          <img src="../assets/settings.svg" alt="settings">
+          <span>Настройки</span>
+        </div>
+        <div class="profile_menu_right">
+          <a href="../profile_stat/index.html">
+            <span class="current_tab">Статистика</span>
+          </a>
+          <a href="../profile_matches/index.html">
+            <span>Матчи</span>
+          </a>
+          <a href="../profile_tournaments/index.html">
+            <span>Турниры</span>
+          </a>
+          <a href="../profile_teams/index.html">
+            <span>Команда</span>
+          </a>
+        </div>
+      </article>
+      <article class="profile_body">
+        <div class="profile_body_left">
+          <div class="stat_section">
+            <span>УБИЙСТВА / СМЕРТИ</span>
+            <span>1.75</span>
+            <div class="stat_progress">
+              <span class="progress_middle"></span>
+              <span class="progress_green"></span>
+              <span class="progress_marker progress_marker_green"></span>
+            </div>
+          </div>
+          <div class="stat_section">
+            <span>СРЕДНИЙ УРОН / РАУНД</span>
+            <span>25</span>
+            <div class="stat_progress">
+              <span class="progress_red"></span>
+              <span class="progress_middle"></span>
+              <span class="progress_marker progress_marker_red"></span>
+            </div>
+          </div>
+          <div class="stat_section">
+            <span>% ПОБЕД</span>
+            <span>60</span>
+            <div class="stat_progress">
+              <span class="progress_middle"></span>
+              <span class="progress_orange"></span>
+              <span class="progress_marker progress_marker_orange"></span>
+            </div>
+          </div>
+          <div class="stat_section">
+            <span>% ХЕДШОТОВ</span>
+            <span>75</span>
+            <div class="stat_progress">
+              <span class="progress_middle"></span>
+              <span class="progress_green"></span>
+              <span class="progress_marker progress_marker_green"></span>
+            </div>
+          </div>
+        </div>
+        <div class="profile_body_right">
+          <div class="profile_body_right_section">
+            <span>Матчи</span>
+            <span>15</span>
+          </div>
+          <div class="profile_body_right_section">
+            <span>% Хедшотов</span>
+            <span>75</span>
+          </div>
+          <div class="profile_body_right_section">
+            <span>Всего убийств</span>
+            <span>120</span>
+          </div>
+          <div class="profile_body_right_section">
+            <span>Всего смертей</span>
+            <span>68</span>
+          </div>
+          <div class="profile_body_right_section">
+            <span>Убийства / Смерти</span>
+            <span>1.75</span>
+          </div>
+          <div class="profile_body_right_section">
+            <span>Средний урон / Раунд</span>
+            <span>25</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="../app.js"></script>
+</body>
+
+</html>
