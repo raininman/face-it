@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../style/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../style/default.css" />
+  <link rel="stylesheet" type="text/css" href="../style/main.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>Профиль</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="../index.html"><img src="../assets/fks_logo.svg" alt="fks logo" height="80" width="80" class="logo"></a>
+      <img src="../assets/nav_burger.svg" alt="fks logo" height="30" width="30" class="nav_burger" id="burger">
+      <ul id="menu">
+        <li><a href="">Главная</a></li>
+        <li><a href="">Матчи</a></li>
+        <li><a href="../teams/index.html">Команды</a></li>
+        <li>
+          <div class="dropdown">
+            <span>Таблица</span>
+            <div class="dropdown-content">
+              <a href="../table_players/index.html">Игроки</a>
+              <a href="../table_teams/index.html">Команды</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="../streams/index.html">Трансляции</a></li>
+      </ul>
+      <ul class="profile">
+        <li><a href=""><img src="../assets/message.svg" alt="mail"></a></li>
+        <li><a href=""><img src="../assets/bell.svg" alt="bell"></a></li>
+        <li><a href="../profile_stat/index.html">nickname</a></li>
+        <li><a href="../profile_stat/index.html"><img src="../assets/mock_avatar.png" alt="avatar" height="70"
+              width="70" class="profile_avatar"></a></li>
+        <div id="sideBurger" class="side_burger">
+          <span class="phone_nav_burger"></span>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <aside id="sideMenu">69
+      <h3>nickname</h3>
+      <div class="statistics">
+        <img src="../assets/kd.svg" alt="k/d" height="16.67" width="16.67">
+        <span>1.22</span>
+        <img src="../assets/stats.svg" alt="stats" height="16.67" width="16.67">
+        <span>15</span>
+      </div>
+      <div class="likes">
+        <div>
+          <img src="../assets/sad.svg" alt="sad" height="18" width="18">
+          <span>30% (3)</span>
+        </div>
+        <div>
+          <img src="../assets/happy.svg" alt="happy" height="18" width="18">
+          <span>70% (7)</span>
+        </div>
+      </div>
+      <div class="progress"></div>
+      <ul>
+        <li>
+          <img src="../assets/user.svg" alt="user" height="20" width="20">
+          <span>Профиль</span>
+        </li>
+        <li>
+          <img src="../assets/matches.svg" alt="matches" height="20" width="20">
+          <span>Мои матчи</span>
+        </li>
+        <li>
+          <img src="../assets/settings.svg" alt="settings" height="20" width="20">
+          <span>Настройки</span>
+        </li>
+        <li>
+          <img src="../assets/exit.svg" alt="exit" height="20" width="20">
+          <span>Выход</span>
+        </li>
+      </ul>
+    </aside>
+    <section class="profile_section">
+      <article class="aside_menu">
+        <a href="../profile_settings/index.html"><span>Профиль</span></a>
+        <a href="../profile_settings_socials/index.html"><span>Социальные сети</span></a>
+        <a href="../profile_settings_verification/index.html" class="current_menu_tab"><span>Верификация</span></a>
+      </article>
+      <article class="settings_info">
+        <span class="info_header">Верификация</span>
+        <div class="profile_settings_info">
+          <span class="profile_settings_info_positives">Преимущества верифицированного аккаунта:</span>
+          <div class="positives_grid">
+            <div class="positives_cell">
+              <img src="../assets/verified.svg" alt="verified" height="100" width="100">
+              <span>Галочка в профиле</span>
+            </div>
+            <div class="positives_cell">
+              <img src="../assets/info.svg" alt="info" height="100" width="100">
+              <span>Неизменные данные</span>
+            </div>
+            <div class="positives_cell">
+              <img src="../assets/trophy.svg" alt="trophy" height="100" width="100">
+              <span>Возможность участвовать в турнирах и лигах</span>
+            </div>
+          </div>
+          <div class="verification">
+            <input type="checkbox" name="verification" id="verificationCheckbox">
+            <span>Я понимаю, что не смогу пройти верификацию на другом аккаунте</span>
+          </div>
+          <button class="start_verification">Начать верификацию</button>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="../app.js"></script>
+</body>
+
+</html>
