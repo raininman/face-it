@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../style/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../style/default.css" />
+  <link rel="stylesheet" type="text/css" href="../style/main.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>Страница турнира обзор</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="../index.html"><img src="../assets/fks_logo.svg" alt="fks logo" height="80" width="80" class="logo"></a>
+      <img src="../assets/nav_burger.svg" alt="fks logo" height="30" width="30" class="nav_burger" id="burger">
+      <ul id="menu">
+        <li><a href="../main_login/index.html">Главная</a></li>
+        <li><a href="../matches_new/index.html">Матчи</a></li>
+        <li><a href="../teams/index.html">Команды</a></li>
+        <li>
+          <div class="dropdown">
+            <span>Таблица</span>
+            <div class="dropdown-content">
+              <a href="../table_players/index.html">Игроки</a>
+              <a href="../table_teams/index.html">Команды</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="../streams/index.html">Трансляции</a></li>
+      </ul>
+      <ul class="profile">
+        <li><a href=""><img src="../assets/message.svg" alt="mail"></a></li>
+        <li><a href=""><img src="../assets/bell.svg" alt="bell"></a></li>
+        <li><a href="../profile_stat/index.html">nickname</a></li>
+        <li><a href="../profile_stat/index.html"><img src="../assets/mock_avatar.png" alt="avatar" height="70"
+              width="70" class="profile_avatar"></a></li>
+        <div id="sideBurger" class="side_burger">
+          <span class="phone_nav_burger"></span>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <aside id="sideMenu">
+      <h3>nickname</h3>
+      <div class="statistics">
+        <img src="../assets/kd.svg" alt="k/d" height="16.67" width="16.67">
+        <span>1.22</span>
+        <img src="../assets/stats.svg" alt="stats" height="16.67" width="16.67">
+        <span>15</span>
+      </div>
+      <div class="likes">
+        <div>
+          <img src="../assets/sad.svg" alt="sad" height="18" width="18">
+          <span>30% (3)</span>
+        </div>
+        <div>
+          <img src="../assets/happy.svg" alt="happy" height="18" width="18">
+          <span>70% (7)</span>
+        </div>
+      </div>
+      <div class="progress"></div>
+      <ul>
+        <li>
+          <img src="../assets/user.svg" alt="user" height="20" width="20">
+          <a href="../profile_stat/index.html"><span>Профиль</span></a>
+        </li>
+        <li>
+          <img src="../assets/matches.svg" alt="matches" height="20" width="20">
+          <a href="../profile_matches/index.html"><span>Мои матчи</span></a>
+        </li>
+        <li>
+          <img src="../assets/settings.svg" alt="settings" height="20" width="20">
+          <a href="../profile_settings/index.html"><span>Настройки</span></a>
+        </li>
+        <li>
+          <img src="../assets/exit.svg" alt="exit" height="20" width="20">
+          <a href="../main_nologin/index.html"><span>Выход</span></a>
+        </li>
+      </ul>
+    </aside>
+    <section class="match">
+      <article class=" teams_header">
+        <div class="teams_header_left">
+          <img src="../assets/mock_team.png" alt="team avatar" height="50" width="50">
+          <span>packofuf</span>
+          <img src="../assets/team.svg" alt="team" height="30" width="30">
+        </div>
+        <span class="teams_header_center">LEAGUE</span>
+        <div class="teams_header_right">
+          <img src="../assets/team.svg" alt="team" height="30" width="30">
+          <span>Svet</span>
+          <img src="../assets/mock_team.png" alt="team avatar" height="50" width="50">
+        </div>
+      </article>
+      <article class="teams_body">
+        <div class="teams_body_left">
+          <div class="teams_body_player">
+            <img src="../assets/mock_avatar.png" alt="avatar" height="80" width="80">
+            <span>Player</span>
+          </div>
+          <div class="teams_body_player">
+            <img src="../assets/mock_avatar.png" alt="avatar" height="80" width="80">
+            <span>Player</span>
+          </div>
+          <div class="teams_body_player">
+            <img src="../assets/mock_avatar.png" alt="avatar" height="80" width="80">
+            <span>Player</span>
+          </div>
+          <div class="teams_body_player">
+            <img src="../assets/crown.svg" alt="crown" height="18" width="22" class="player_crown">
+            <img src="../assets/mock_avatar.png" alt="avatar" height="80" width="80">
+            <span>Player</span>
+          </div>
+          <div class="teams_body_player">
+            <img src="../assets/mock_avatar.png" alt="avatar" height="80" width="80">
+            <span>Player</span>
+          </div>
+        </div>
+        <div class="teams_body_center">
+          <span class="score">3 : 5</span>
+          <span>1-я половина</span>
+          <div class="time">
+            <img src="../assets/clock.svg" alt="clock" height="20" width="20">
+            <span>17:34</span>
+          </div>
+          <span>История пик/банов карт</span>
+        </div>
+        <div class="teams_body_right">
+          <div class="teams_body_player">
+            <img src="../assets/crown.svg" alt="crown" height="18" width="22" class="player_crown">
+            <img src="../assets/mock_avatar.png" alt="avatar" height="80" width="80">
+            <span>Player</span>
+          </div>
+          <div class="teams_body_player">
+            <img src="../assets/mock_avatar.png" alt="avatar" height="80" width="80">
+            <span>Player</span>
+          </div>
+          <div class="teams_body_player">
+            <img src="../assets/mock_avatar.png" alt="avatar" height="80" width="80">
+            <span>Player</span>
+          </div>
+          <div class="teams_body_player">
+            <img src="../assets/mock_avatar.png" alt="avatar" height="80" width="80">
+            <span>Player</span>
+          </div>
+          <div class="teams_body_player">
+            <img src="../assets/mock_avatar.png" alt="avatar" height="80" width="80">
+            <span>Player</span>
+          </div>
+        </div>
+      </article>
+      <article class="match_info">
+        <div class="match_info_cell">
+          <span>ID матча</span>
+          <span>12563564</span>
+        </div>
+        <div class="match_info_cell">
+          <span>Режим</span>
+          <span>5v5</span>
+        </div>
+        <div class="match_info_cell">
+          <span>Карта</span>
+          <span>Dust 2</span>
+        </div>
+        <div class="match_info_cell">
+          <span>Начало</span>
+          <span>17 минут назад</span>
+        </div>
+      </article>
+      <article class="match_actions">
+        <div class="actions_stream">
+          <a href="../stream/index.html">
+            <img src="../assets/tv.svg" alt="stream">
+            <span>Смотреть трансляцию</span>
+          </a>
+        </div>
+        <div class="actions_stat">
+          <a href="../match_statistic/index.html">
+            <img src="../assets/match_stat.svg" alt="stat">
+            <span>Статистика</span>
+          </a>
+        </div>
+      </article>
+    </section>
+    <section class="match_chat">
+      <article class="match_chat_header">
+        <span>Общий чат</span>
+      </article>
+      <article class="match_chat_body">
+        <span class="match_chat_time">Матч создан, 11 февраля</span>
+        <div class="chat_message">
+          <div class="chat_message_left">
+            <img src="../assets/mock_avatar.png" alt="avatar" height="35" width="35">
+            <div class="message_name_text">
+              <span class="message_name">friendly</span>
+              <span class="message_text">го мид на ножах</span>
+            </div>
+          </div>
+          <span class="message_time">17:17</span>
+        </div>
+        <div class="chat_message">
+          <div class="chat_message_left">
+            <img src="../assets/mock_avatar.png" alt="avatar" height="35" width="35">
+            <div class="message_name_text">
+              <span class="message_name">POV4el</span>
+              <span class="message_text">нет</span>
+            </div>
+          </div>
+          <span class="message_time">17:17</span>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="../app.js"></script>
+</body>
+
+</html>

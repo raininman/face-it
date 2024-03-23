@@ -45,24 +45,21 @@
   </header>
   <main>
     <aside id="sideMenu">
-      <h3>nickname</h3>
-      <div class="statistics">
-        <img src="../assets/kd.svg" alt="k/d" height="16.67" width="16.67">
-        <span>1.22</span>
-        <img src="../assets/stats.svg" alt="stats" height="16.67" width="16.67">
-        <span>15</span>
+      <div class="team_squad">
+        <img src="../assets/mock_avatar.png" alt="avatar" height="55" width="55">
+        <img src="../assets/mock_avatar.png" alt="avatar" height="55" width="55">
+        <img src="../assets/mock_avatar.png" alt="avatar" height="55" width="55">
+        <img src="../assets/add_player.png" alt="avatar" height="55" width="55">
+        <img src="../assets/add_player.png" alt="avatar" height="55" width="55">
       </div>
-      <div class="likes">
-        <div>
-          <img src="../assets/sad.svg" alt="sad" height="18" width="18">
-          <span>30% (3)</span>
-        </div>
-        <div>
-          <img src="../assets/happy.svg" alt="happy" height="18" width="18">
-          <span>70% (7)</span>
-        </div>
+      <span class="team_vs">VS</span>
+      <div class="team_squad">
+        <img src="../assets/mock_avatar.png" alt="avatar" height="55" width="55">
+        <img src="../assets/mock_avatar.png" alt="avatar" height="55" width="55">
+        <img src="../assets/add_player.png" alt="avatar" height="55" width="55">
+        <img src="../assets/add_player.png" alt="avatar" height="55" width="55">
+        <img src="../assets/add_player.png" alt="avatar" height="55" width="55">
       </div>
-      <div class="progress"></div>
       <ul>
         <li>
           <img src="../assets/user.svg" alt="user" height="20" width="20">
@@ -83,78 +80,14 @@
       </ul>
     </aside>
     <section class="profile_section">
-      <article class="profile_header">
-        <div class="avatar">
-          <img src="../assets/mock_avatar.png" alt="team avatar" height="160" width="160">
-        </div>
-        <div class="profile_info">
-          <div class="profile_info_top">
-            <span class="profile_nickname">nickname</span>
-            <div class="profile_registration">
-              <span>Зарегистрирован:</span>
-              <span>28 февраля 2024 г.</span>
-            </div>
-            <div class="profile_mode">
-              <div class="profile_mode_menu">
-                <img src="../assets/battle.svg" alt="mode" height="22" width="22">
-                <span>Режим</span>
-                <span>5v5</span>
-                <button class="dropbtn" id="modeDropBtn"></button>
-              </div>
-              <div class="menu_content" id="modeMenu">
-                <a href="#" class="current_mode">5v5</a>
-                <a href="#">2v2</a>
-                <a href="#">1v1</a>
-              </div>
-            </div>
-            <div class="profile_leaderboard">
-              <img src="../assets/stats.svg" alt="top" height="22" width="22">
-              <span>Место в топе</span>
-              <span>10</span>
-            </div>
-            <div class="profile_matches">
-              <img src="../assets/matches.svg" alt="matches" height="22" width="22">
-              <span>Матчи</span>
-              <span>20</span>
-            </div>
-          </div>
-          <div class="profile_info_bottom">
-            <div class="profile_info_bottom_left">
-              <span class="profile_name">Иван Иванов</span>
-              <span class="profile_team">Название команды</span>
-              <span class="profile_age">25 лет</span>
-            </div>
-            <a href="#" class="steam_href">
-              <button class="steam_button">
-                <span>Профиль в STEAM</span>
-                <img src="../assets/steam.svg" alt="steam login">
-              </button>
-            </a>
-          </div>
-        </div>
-      </article>
-      <article class="profile_menu">
-        <div class="profile_menu_left">
-          <img src="../assets/settings.svg" alt="settings">
-          <span>Настройки</span>
-        </div>
-        <div class="profile_menu_right">
-          <a href="../profile_stat/index.html">
-            <span>Статистика</span>
-          </a>
-          <a href="../profile_matches/index.html">
-            <span class="current_tab">Матчи</span>
-          </a>
-          <a href="../profile_tournaments/index.html">
-            <span>Турниры</span>
-          </a>
-          <a href="../profile_teams/index.html">
-            <span>Команда</span>
-          </a>
-        </div>
-      </article>
+
       <article class="profile_body">
         <div class="profile_body_aside">
+          <div class="aside_menu">
+            <a href="../matches_new/index.html" class="current_menu_tab"><span>Новые</span></a>
+            <a href="../match_current/index.html"><span>Текущие</span></a>
+            <a href="../match_finished/index.html"><span>Завершённые</span></a>
+          </div>
           <div class="profile_body_menu">
             <span class="profile_body_menu_filter">Фильтры</span>
             <div class="profile_mode_menu_side">
@@ -183,10 +116,9 @@
           <div class="profile_table_content">
             <div class="profile_table_header">
               <span>Карта</span>
+              <span>Создатель</span>
               <span>Режим</span>
-              <span>Счёт</span>
-              <span>Результат</span>
-              <span>Завершён</span>
+              <span>Создан</span>
               <span class="mock_table_expand"></span>
             </div>
             <div class="profile_table_cell">
@@ -194,10 +126,12 @@
                 <img src="../assets/mock_map.png" alt="map img" height="60" width="90">
                 <span>Dust 2</span>
               </div>
+              <div class="map_name">
+                <img src="../assets/fks_logo.svg" alt="avatar img" height="30" width="30">
+                <span>Система</span>
+              </div>
               <span>5v5</span>
-              <span>13/7</span>
-              <span class="map_win">ПОБЕДА</span>
-              <span>29 фев. в 16:54</span>
+              <span>1 минуту назад</span>
               <img src="../assets/arrow_right.svg" alt="expand" height="24" width="24">
             </div>
             <div class="profile_table_cell">
@@ -205,10 +139,12 @@
                 <img src="../assets/mock_map.png" alt="map img" height="60" width="90">
                 <span>Dust 2</span>
               </div>
+              <div class="map_name">
+                <img src="../assets/fks_logo.svg" alt="avatar img" height="30" width="30">
+                <span>Система</span>
+              </div>
               <span>5v5</span>
-              <span>13/7</span>
-              <span class="map_lose">ПОРАЖЕНИЕ</span>
-              <span>29 фев. в 16:54</span>
+              <span>1 минуту назад</span>
               <img src="../assets/arrow_right.svg" alt="expand" height="24" width="24">
             </div>
             <div class="profile_table_cell">
@@ -216,13 +152,14 @@
                 <img src="../assets/mock_map.png" alt="map img" height="60" width="90">
                 <span>Dust 2</span>
               </div>
+              <div class="map_name">
+                <img src="../assets/fks_logo.svg" alt="avatar img" height="30" width="30">
+                <span>Система</span>
+              </div>
               <span>5v5</span>
-              <span>13/7</span>
-              <span class="map_win">ПОБЕДА</span>
-              <span>29 фев. в 16:54</span>
+              <span>1 минуту назад</span>
               <img src="../assets/arrow_right.svg" alt="expand" height="24" width="24">
             </div>
-
           </div>
         </div>
       </article>

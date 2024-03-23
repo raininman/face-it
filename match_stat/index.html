@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../style/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../style/default.css" />
+  <link rel="stylesheet" type="text/css" href="../style/main.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>Страница турнира обзор</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="../index.html"><img src="../assets/fks_logo.svg" alt="fks logo" height="80" width="80" class="logo"></a>
+      <img src="../assets/nav_burger.svg" alt="fks logo" height="30" width="30" class="nav_burger" id="burger">
+      <ul id="menu">
+        <li><a href="../main_login/index.html">Главная</a></li>
+        <li><a href="../matches_new/index.html">Матчи</a></li>
+        <li><a href="../teams/index.html">Команды</a></li>
+        <li>
+          <div class="dropdown">
+            <span>Таблица</span>
+            <div class="dropdown-content">
+              <a href="../table_players/index.html">Игроки</a>
+              <a href="../table_teams/index.html">Команды</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="../streams/index.html">Трансляции</a></li>
+      </ul>
+      <ul class="profile">
+        <li><a href=""><img src="../assets/message.svg" alt="mail"></a></li>
+        <li><a href=""><img src="../assets/bell.svg" alt="bell"></a></li>
+        <li><a href="../profile_stat/index.html">nickname</a></li>
+        <li><a href="../profile_stat/index.html"><img src="../assets/mock_avatar.png" alt="avatar" height="70"
+              width="70" class="profile_avatar"></a></li>
+        <div id="sideBurger" class="side_burger">
+          <span class="phone_nav_burger"></span>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <aside id="sideMenu">
+      <h3>nickname</h3>
+      <div class="statistics">
+        <img src="../assets/kd.svg" alt="k/d" height="16.67" width="16.67">
+        <span>1.22</span>
+        <img src="../assets/stats.svg" alt="stats" height="16.67" width="16.67">
+        <span>15</span>
+      </div>
+      <div class="likes">
+        <div>
+          <img src="../assets/sad.svg" alt="sad" height="18" width="18">
+          <span>30% (3)</span>
+        </div>
+        <div>
+          <img src="../assets/happy.svg" alt="happy" height="18" width="18">
+          <span>70% (7)</span>
+        </div>
+      </div>
+      <div class="progress"></div>
+      <ul>
+        <li>
+          <img src="../assets/user.svg" alt="user" height="20" width="20">
+          <a href="../profile_stat/index.html"><span>Профиль</span></a>
+        </li>
+        <li>
+          <img src="../assets/matches.svg" alt="matches" height="20" width="20">
+          <a href="../profile_matches/index.html"><span>Мои матчи</span></a>
+        </li>
+        <li>
+          <img src="../assets/settings.svg" alt="settings" height="20" width="20">
+          <a href="../profile_settings/index.html"><span>Настройки</span></a>
+        </li>
+        <li>
+          <img src="../assets/exit.svg" alt="exit" height="20" width="20">
+          <a href="../main_nologin/index.html"><span>Выход</span></a>
+        </li>
+      </ul>
+    </aside>
+    <section class="match">
+      <article class="breadcrumbs">
+        <div class="breadcrumbs_left">
+          <a href="../match_current/index.html">
+            <img src="../assets/arrow_left.svg" alt="back" height="20" width="20">
+            <span>На страницу матча</span>
+          </a>
+        </div>
+        <div class="breadcrumbs_right">
+          <a href="#">
+            <img src="../assets/download.svg" alt="download" height="20" width="20">
+            <span>Скачать демо</span>
+          </a>
+        </div>
+      </article>
+      <article class="teams_header">
+        <div class="teams_header_left">
+          <img src="../assets/mock_team.png" alt="team avatar" height="50" width="50">
+          <span>packofuf</span>
+          <img src="../assets/team.svg" alt="team" height="30" width="30">
+        </div>
+        <div class="teams_header_center">
+          <img src="../assets/trophy.svg" alt="winner" height="40" width="40" class="team_winner_left">
+          <span>5v5, BO1</span>
+            <span class="score">13 : 10</span>
+          <span>Завершён</span>
+          <div class="time">
+            <img src="../assets/clock.svg" alt="clock" height="20" width="20">
+            <span>35:02</span>
+          </div>
+        </div>
+        <div class="teams_header_right">
+          <img src="../assets/team.svg" alt="team" height="30" width="30">
+          <span>Svet</span>
+          <img src="../assets/mock_team.png" alt="team avatar" height="50" width="50">
+        </div>
+      </article>
+      <article class="teams_body">
+        <div class="team_stat">
+          <div class="team_title_avatar">
+            <img src="../assets/mock_team.png" alt="team avatar" height="50" width="50">
+            <span>packofuf</span>
+          </div>
+          <div class="team_stat_table">
+            <div class="team_stat_table_header">
+              <span>Игрок</span>
+              <span>Kills</span>
+              <span>Deaths</span>
+              <span>Assists</span>
+              <span>K/D Ratio</span>
+              <span>ADR</span>
+              <span>Headshots %</span>
+              <span>MVPs</span>
+              <span>Triple Kills</span>
+              <span>Quadro Kills</span>
+              <span>Penta Kills</span>
+            </div>
+            <div class="team_stat_table_content">
+              <div class="content_nickname_avatar">
+                <img src="../assets/mock_avatar.png" alt="player avatar" height="25" width="25">
+                <span class="content_nickname">MOncler</span>
+              </div>
+              <span>15</span>
+              <span>18</span>
+              <span>2</span>
+              <span>0.88</span>
+              <span>95</span>
+              <span>49</span>
+              <span>4</span>
+              <span>3</span>
+              <span>0</span>
+              <span>0</span>
+            </div>
+            <div class="team_stat_table_content">
+              <div class="content_nickname_avatar">
+                <img src="../assets/mock_avatar.png" alt="player avatar" height="25" width="25">
+                <span class="content_nickname">MOncler</span>
+              </div>
+              <span>15</span>
+              <span>18</span>
+              <span>2</span>
+              <span>0.88</span>
+              <span>95</span>
+              <span>49</span>
+              <span>4</span>
+              <span>3</span>
+              <span>0</span>
+              <span>0</span>
+            </div>
+            <div class="team_stat_table_content">
+              <div class="content_nickname_avatar">
+                <img src="../assets/mock_avatar.png" alt="player avatar" height="25" width="25">
+                <span class="content_nickname">MOncler</span>
+              </div>
+              <span>15</span>
+              <span>18</span>
+              <span>2</span>
+              <span>0.88</span>
+              <span>95</span>
+              <span>49</span>
+              <span>4</span>
+              <span>3</span>
+              <span>0</span>
+              <span>0</span>
+            </div>
+            <div class="team_stat_table_content">
+              <div class="content_nickname_avatar">
+                <img src="../assets/mock_avatar.png" alt="player avatar" height="25" width="25">
+                <span class="content_nickname">MOncler</span>
+              </div>
+              <span>15</span>
+              <span>18</span>
+              <span>2</span>
+              <span>0.88</span>
+              <span>95</span>
+              <span>49</span>
+              <span>4</span>
+              <span>3</span>
+              <span>0</span>
+              <span>0</span>
+            </div>
+            <div class="team_stat_table_content">
+              <div class="content_nickname_avatar">
+                <img src="../assets/mock_avatar.png" alt="player avatar" height="25" width="25">
+                <span class="content_nickname">MOncler</span>
+              </div>
+              <span>15</span>
+              <span>18</span>
+              <span>2</span>
+              <span>0.88</span>
+              <span>95</span>
+              <span>49</span>
+              <span>4</span>
+              <span>3</span>
+              <span>0</span>
+              <span>0</span>
+            </div>
+          </div>
+        </div>
+        <div class="team_stat">
+          <div class="team_title_avatar">
+            <img src="../assets/mock_team.png" alt="team avatar" height="50" width="50">
+            <span>packofuf</span>
+          </div>
+          <div class="team_stat_table">
+            <div class="team_stat_table_header">
+              <span>Игрок</span>
+              <span>Kills</span>
+              <span>Deaths</span>
+              <span>Assists</span>
+              <span>K/D Ratio</span>
+              <span>ADR</span>
+              <span>Headshots %</span>
+              <span>MVPs</span>
+              <span>Triple Kills</span>
+              <span>Quadro Kills</span>
+              <span>Penta Kills</span>
+            </div>
+            <div class="team_stat_table_content">
+              <div class="content_nickname_avatar">
+                <img src="../assets/mock_avatar.png" alt="player avatar" height="25" width="25">
+                <span class="content_nickname">MOncler</span>
+              </div>
+              <span>15</span>
+              <span>18</span>
+              <span>2</span>
+              <span>0.88</span>
+              <span>95</span>
+              <span>49</span>
+              <span>4</span>
+              <span>3</span>
+              <span>0</span>
+              <span>0</span>
+            </div>
+            <div class="team_stat_table_content">
+              <div class="content_nickname_avatar">
+                <img src="../assets/mock_avatar.png" alt="player avatar" height="25" width="25">
+                <span class="content_nickname">MOncler</span>
+              </div>
+              <span>15</span>
+              <span>18</span>
+              <span>2</span>
+              <span>0.88</span>
+              <span>95</span>
+              <span>49</span>
+              <span>4</span>
+              <span>3</span>
+              <span>0</span>
+              <span>0</span>
+            </div>
+            <div class="team_stat_table_content">
+              <div class="content_nickname_avatar">
+                <img src="../assets/mock_avatar.png" alt="player avatar" height="25" width="25">
+                <span class="content_nickname">MOncler</span>
+              </div>
+              <span>15</span>
+              <span>18</span>
+              <span>2</span>
+              <span>0.88</span>
+              <span>95</span>
+              <span>49</span>
+              <span>4</span>
+              <span>3</span>
+              <span>0</span>
+              <span>0</span>
+            </div>
+            <div class="team_stat_table_content">
+              <div class="content_nickname_avatar">
+                <img src="../assets/mock_avatar.png" alt="player avatar" height="25" width="25">
+                <span class="content_nickname">MOncler</span>
+              </div>
+              <span>15</span>
+              <span>18</span>
+              <span>2</span>
+              <span>0.88</span>
+              <span>95</span>
+              <span>49</span>
+              <span>4</span>
+              <span>3</span>
+              <span>0</span>
+              <span>0</span>
+            </div>
+            <div class="team_stat_table_content">
+              <div class="content_nickname_avatar">
+                <img src="../assets/mock_avatar.png" alt="player avatar" height="25" width="25">
+                <span class="content_nickname">MOncler</span>
+              </div>
+              <span>15</span>
+              <span>18</span>
+              <span>2</span>
+              <span>0.88</span>
+              <span>95</span>
+              <span>49</span>
+              <span>4</span>
+              <span>3</span>
+              <span>0</span>
+              <span>0</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="../app.js"></script>
+</body>
+
+</html>
