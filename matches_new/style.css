@@ -361,23 +361,50 @@ aside ul li {
   width: 22px;
 }
 
-#profileModeBtn.close,
-#profileBestOfBtn.close {
-  transform: rotate(180deg);
+.profile_body_aside {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 #profileMode,
-#profileBestOf {
-  display: block;
+#profileBestOf{
+  display: none;
+}
+
+#profileBestOf.overlay,
+#profileMode.overlay {
+  display: grid;
+  padding: 10px 0px;
+}
+
+.profile_body {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 767px) {
+  .profile_body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.profile_body_menu_filter {
+  padding: 18px 15px 7px 15px;
+  border-bottom: 1px solid #696969;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 .profile_body_menu {
   border-radius: 15px;
-  background-color: #1d202a;
+  background-color: #31333a;
   width: 230px;
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
+  font-size: 1rem;
 }
 
 .profile_mode_menu_side {
@@ -388,6 +415,7 @@ aside ul li {
   font-weight: 500;
   color: #b4b4bb;
   padding: 16px 15px;
+  border-bottom: 1px solid #696969;
 }
 
 @media (max-width: 980px) {
@@ -405,9 +433,9 @@ aside ul li {
 .menu_content_side_cell {
   display: flex;
   gap: 10px;
+  padding-top: 7px;
   align-items: center;
   padding-left: 15px;
-  padding-top: 7px;
   display: block;
   position: relative;
   padding-left: 50px;
@@ -468,36 +496,11 @@ aside ul li {
   transform: rotate(45deg);
 }
 
-#profileBestOf.overlay,
-#profileMode.overlay {
-  border-bottom: 1px solid #696969;
-  display: grid;
-  row-gap: 20px;
-  padding: 20px 0px;
-}
-
-.menu_content_side a:not(.current_mode_side),
-.menu_content_side a:not(.current_best_of) {
-  padding-left: 15px;
-}
-
-.profile_body {
-  display: flex;
-  gap: 15px;
-}
-
-.profile_body_menu_filter {
-  padding: 18px 15px 7px 15px;
-  border-bottom: 1px solid #696969;
-  font-size: 1.125rem;
-  font-weight: 500;
-}
-
 .profile_body_reset {
-  text-align: center;
   background-color: #2691df;
   border-radius: 15px;
-  padding: 15px 65px;
+  padding: 15px 35px;
+  width: 100%;
   color: var(--text-color);
   font-weight: 600;
   font-size: 1.25rem;
@@ -506,7 +509,6 @@ aside ul li {
 @media (max-width: 980px) {
   .profile_body_reset {
     width: 160px;
-    padding: 15px 25px;
   }
 }
 
@@ -515,7 +517,6 @@ aside ul li {
     display: none;
   }
 }
-
 .profile_table {
   border-radius: 15px;
   background-color: #1d202a;

@@ -314,13 +314,27 @@ aside ul li {
 .profile_section {
   display: flex;
   gap: 20px;
-  margin: 40px 83px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1230px;
+}
+
+@media (max-width: 767px) {
+  .profile_section {
+    flex-direction: column;
+  }
 }
 
 .settings_info {
   background-color: #1d202a;
   border-radius: 15px;
   width: 950px;
+}
+
+@media (max-width: 767px) {
+  .settings_info {
+    width: 100%;
+  }
 }
 
 .info_header {
@@ -331,21 +345,46 @@ aside ul li {
   border-bottom: 1px solid #696969;
 }
 
+@media (max-width: 767px) {
+  .info_header {
+    padding: 10px 15px;
+  }
+}
+
 .profile_settings_info {
   display: flex;
   flex-direction: column;
   padding: 0 30px;
 }
 
+@media (max-width: 767px) {
+  .profile_settings_info {
+    padding: 0 15px;
+  }
+}
+
 .profile_info_cell {
   display: grid;
   grid-template-columns: 2fr 3fr;
+  column-gap: 20px;
   border-bottom: 1px solid #696969;
-  padding: 30px;
+  padding: 26px 0px;
   color: #b4b4bb;
   font-size: 1rem;
   font-weight: 500;
   align-items: center;
+}
+
+@media (max-width: 767px) {
+  .profile_info_cell {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding: 10px;
+  }
+  .profile_info_cell img:not(.cell_avatar){
+    height: 23px;
+    width: 23px;
+  }
 }
 
 .profile_info_cell:last-of-type {
@@ -356,16 +395,9 @@ aside ul li {
   color: var(--text-color);
 }
 
-.cell_left {
+.cell_left{
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.news_checkbox {
-  justify-self: left;
-  height: 23px;
-  width: 23px;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-}

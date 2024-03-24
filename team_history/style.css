@@ -417,6 +417,7 @@ aside ul li {
 @media (max-width: 767px) {
   .team_stat {
     width: 100%;
+    overflow-x: scroll;
   }
 }
 
@@ -462,6 +463,13 @@ aside ul li {
   font-weight: 400;
   font-size: 0.875rem;
   align-items: center;
+}
+
+@media (max-width: 767px) {
+  .team_stat_title,
+  .table_content {
+    width: 400px;
+  }
 }
 
 @media (max-width: 767px) {
