@@ -121,7 +121,7 @@ nav button {
 
 .tournaments {
   border-radius: 15px;
-  background-color: #3a3a3a;
+  background-color: #1d202a;
   margin: 40px auto;
   width: 76.875rem;
   padding: 40px 110px;
@@ -142,7 +142,8 @@ h3 {
 }
 
 .tournament {
-  background-color: #616161;
+  display: block;
+  background-color: #31333a;
   padding: 30px 20px;
   border-radius: 15px;
   display: grid;

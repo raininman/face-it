@@ -71,7 +71,7 @@ header nav {
   #menu.overlay {
     display: block;
     height: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 3;
     margin-left: 0;
     top: 84px;
@@ -131,7 +131,7 @@ header nav {
   display: block;
   height: 100%;
   width: 22rem;
-  position: fixed;
+  position: absolute;
   z-index: 3;
   top: 120px;
   right: 0px;
@@ -270,14 +270,30 @@ aside ul {
 aside ul li {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
+
 .match,
 .match_chat {
   background-color: #1d202a;
   border-radius: 15px;
-  width: 1250px;
+  max-width: 1250px;
   margin: 20px auto;
   padding-bottom: 40px;
+}
+
+@media (max-width: 1250px) {
+  .match,
+  .match_chat {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .match,
+  .match_chat {
+    margin: 10px;
+  }
 }
 
 .breadcrumbs {
@@ -288,6 +304,12 @@ aside ul li {
   font-size: 1rem;
   font-weight: 500;
   color: #dadada;
+}
+
+@media (max-width: 767px) {
+  .breadcrumbs {
+    padding: 15px 10px;
+  }
 }
 
 .breadcrumbs_left a,
@@ -305,6 +327,25 @@ aside ul li {
   padding-bottom: 14px;
 }
 
+@media (max-width: 767px) {
+  .teams_header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .teams_header_icon {
+    display: none;
+  }
+
+  .teams_header_avatar {
+    height: 25px;
+    width: 25px;
+  }
+}
+
 .teams_header_left,
 .teams_header_right {
   display: flex;
@@ -313,6 +354,16 @@ aside ul li {
   align-items: center;
   font-weight: 500;
   font-size: 1.125rem;
+}
+
+@media (max-width: 767px) {
+  .teams_header_left {
+    align-self: flex-start;
+  }
+
+  .teams_header_right {
+    align-self: flex-end;
+  }
 }
 
 .teams_header_center {
@@ -330,6 +381,12 @@ aside ul li {
   font-size: 2.5rem;
   font-weight: 600;
   padding: 5px 0;
+}
+
+@media (max-width: 767px) {
+  .score {
+    font-size: 2rem;
+  }
 }
 
 .time {
@@ -354,6 +411,14 @@ aside ul li {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+@media (max-width: 767px) {
+  .teams_body {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 10px;
+  }
 }
 
 .team_stat {
@@ -391,6 +456,12 @@ aside ul li {
   gap: 10px;
   align-items: center;
   font-size: 0.75rem;
+}
+
+.content_nickname {
+  max-width: 8ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .team_stat_table_content {

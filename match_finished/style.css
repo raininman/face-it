@@ -71,7 +71,7 @@ header nav {
   #menu.overlay {
     display: block;
     height: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 3;
     margin-left: 0;
     top: 84px;
@@ -131,7 +131,7 @@ header nav {
   display: block;
   height: 100%;
   width: 22rem;
-  position: fixed;
+  position: absolute;
   z-index: 3;
   top: 120px;
   right: 0px;
@@ -270,13 +270,29 @@ aside ul {
 aside ul li {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
+
 .match,
 .match_chat {
   background-color: #1d202a;
   border-radius: 15px;
-  width: 1250px;
+  max-width: 1250px;
   margin: 20px auto;
+}
+
+@media (max-width: 1250px) {
+  .match,
+  .match_chat {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .match,
+  .match_chat {
+    margin: 10px;
+  }
 }
 
 .teams_header {
@@ -284,6 +300,17 @@ aside ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 767px) {
+  .teams_header_icon {
+    display: none;
+  }
+
+  .teams_header_avatar {
+    height: 25px;
+    width: 25px;
+  }
 }
 
 .teams_header_left,
@@ -294,6 +321,21 @@ aside ul li {
   align-items: center;
   font-weight: 500;
   font-size: 1.125rem;
+}
+
+.teams_header_left span,
+.teams_header_right span {
+  max-width: 9ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 767px) {
+  .teams_header_left,
+  .teams_header_right {
+    padding: 7px 10px;
+    align-items: center;
+  }
 }
 
 .teams_header_center {
@@ -309,6 +351,14 @@ aside ul li {
   border-bottom: 1px solid #696969;
 }
 
+@media (max-width: 767px) {
+  .teams_body {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+}
+
 .teams_body_player {
   position: relative;
   display: flex;
@@ -321,6 +371,26 @@ aside ul li {
   max-width: 9ch;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.teams_body_player_nickname {
+  max-width: 5ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1250px) {
+  .team_body_player_avatar {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media (max-width: 950px) {
+  .team_body_player_avatar {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .teams_body_player_kda {
@@ -342,12 +412,47 @@ aside ul li {
   top: -23px;
 }
 
-.team_winner {
+.team_winner_left {
+  position: absolute;
   display: block;
-  margin-top: -45px;
+  left: -40%;
+}
+
+.team_winner_right {
+  position: absolute;
+  display: block;
+  right: -40%;
+}
+
+@media (max-width: 1040px) {
+  .team_winner_left {
+    left: -60%;
+  }
+  .team_winner_right {
+    right: -60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .team_winner_left {
+    left: -45%;
+  }
+  .team_winner_right {
+    right: -45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .team_winner_left {
+    left: -80%;
+  }
+  .team_winner_right {
+    right: -80%;
+  }
 }
 
 .teams_body_center {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -357,14 +462,33 @@ aside ul li {
   font-weight: 400;
 }
 
+@media (max-width: 767px) {
+  .teams_body_center {
+    margin-top: 0;
+  }
+}
+
 .teams_body_center span:nth-child(4) {
   display: block;
   padding-top: 16px;
 }
 
+@media (max-width: 767px) {
+  .teams_body_center span:nth-child(4) {
+    display: none;
+  }
+}
+
 .score {
   font-size: 2.5rem;
   font-weight: 600;
+}
+
+@media (max-width: 1050px) {
+  .score {
+    font-size: 2rem;
+    font-weight: 600;
+  }
 }
 
 .time {
@@ -379,11 +503,28 @@ aside ul li {
   border-bottom: 1px solid #696969;
 }
 
+@media (max-width: 767px) {
+  .match_info {
+    display: grid;
+    row-gap: 0px;
+    column-gap: 30px;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
+  }
+}
+
 .match_info_cell {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 26px 32px;
+}
+
+@media (max-width: 767px) {
+  .match_info_cell {
+    gap: 5px;
+    padding: 20px 10px;
+  }
 }
 
 .match_info_cell span:first-of-type {
@@ -403,18 +544,45 @@ aside ul li {
   gap: 20px;
 }
 
+@media (max-width: 767px) {
+  .match_actions {
+    padding: 20px 10px;
+  }
+
+  .match_actions img {
+    height: 12px;
+    width: 12px;
+  }
+}
+
 .actions_download a,
 .actions_stat a {
   display: flex;
+  align-items: center;
   gap: 10px;
   font-weight: 400;
   font-size: 1rem;
   color: #dadada;
 }
 
+@media (max-width: 767px) {
+  .actions_download a,
+  .actions_stat a {
+    gap: 5px;
+    font-size: 0.833rem;
+  }
+}
+
 .actions_stat {
   padding-right: 20px;
   border-right: 1px solid #696969;
+}
+
+@media (max-width: 767px) {
+  .actions_stat {
+    padding-right: 0px;
+    border-right: 0;
+  }
 }
 
 .match_chat_header span {
@@ -424,9 +592,22 @@ aside ul li {
   border-bottom: 2px solid #2691df;
 }
 
+@media (max-width: 767px) {
+  .match_chat_header span {
+    padding-bottom: 9px;
+    font-size: 1rem;
+  }
+}
+
 .match_chat_header {
   padding: 28px 32px 18px 32px;
   border-bottom: 1px solid #696969;
+}
+
+@media (max-width: 767px) {
+  .match_chat_header {
+    padding: 10px;
+  }
 }
 
 .match_chat_body {
@@ -464,10 +645,30 @@ aside ul li {
   position: absolute;
 }
 
+@media (max-width: 900px) {
+  .match_chat_time:before,
+  .match_chat_time:after {
+    width: 30%;
+  }
+}
+
+@media (max-width: 420px) {
+  .match_chat_time:before,
+  .match_chat_time:after {
+    width: 25%;
+  }
+}
+
 .chat_message {
   padding: 21px 32px 0px 32px;
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .chat_message {
+    padding: 10px;
+  }
 }
 
 .chat_message:last-of-type {
@@ -477,7 +678,14 @@ aside ul li {
 .chat_message_left {
   display: flex;
   gap: 10px;
-  align-items: center;
+  align-items: top;
+}
+
+@media (max-width: 767px) {
+  .chat_message_avatar {
+    height: 25px;
+    width: 25px;
+  }
 }
 
 .message_name_text {
@@ -489,11 +697,24 @@ aside ul li {
 .message_name {
   font-size: 0.875rem;
   font-weight: 600;
+  max-width: 10ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .message_text {
   font-size: 0.875rem;
   font-weight: 500;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: pretty;
+}
+
+@media (max-width: 767px) {
+  .message_text {
+    max-width: 40ch;
+  }
 }
 
 .message_time {

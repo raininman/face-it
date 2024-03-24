@@ -35,8 +35,8 @@
         <li><a href=""><img src="../assets/message.svg" alt="mail"></a></li>
         <li><a href=""><img src="../assets/bell.svg" alt="bell"></a></li>
         <li><a href="../profile_stat/index.html">nickname</a></li>
-        <li><a href="../profile_stat/index.html"><img src="../assets/mock_avatar.png" alt="avatar" height="70" width="70"
-              class="profile_avatar"></a></li>
+        <li><a href="../profile_stat/index.html"><img src="../assets/mock_avatar.png" alt="avatar" height="70"
+              width="70" class="profile_avatar"></a></li>
         <div id="sideBurger" class="side_burger">
           <span class="phone_nav_burger"></span>
         </div>
@@ -60,6 +60,7 @@
         <img src="../assets/add_player.png" alt="avatar" height="55" width="55">
         <img src="../assets/add_player.png" alt="avatar" height="55" width="55">
       </div>
+      <button class="team_squad_ready">Готов</button>
       <ul>
         <li>
           <img src="../assets/user.svg" alt="user" height="20" width="20">
@@ -80,7 +81,6 @@
       </ul>
     </aside>
     <section class="profile_section">
-
       <article class="profile_body">
         <div class="profile_body_aside">
           <div class="aside_menu">
@@ -95,18 +95,52 @@
               <button class="dropbtn" id="profileModeBtn"></button>
             </div>
             <div class="menu_content_side" id="profileMode">
-              <a href="#" class="current_mode_side">5v5</a>
-              <a href="#">2v2</a>
-              <a href="#">1v1</a>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="mode" id="modeAll">
+                <span class="checkmark"></span>
+                <span>Все режимы</span>
+              </label>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="mode" id="mode5v5">
+                <span class="checkmark"></span>
+                <span>5v5</span>
+              </label>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="mode" id="mode2v2">
+                <span class="checkmark"></span>
+                <span>2v2</span>
+              </label>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="mode" id="mode1v1">
+                <span class="checkmark"></span>
+                <span>1v1</span>
+              </label>
             </div>
             <div class="profile_mode_menu_side">
               <span>Best of</span>
               <button class="dropbtn" id="profileBestOfBtn"></button>
             </div>
             <div class="menu_content_side" id="profileBestOf">
-              <a href="#" class="current_best_of">5</a>
-              <a href="#">3</a>
-              <a href="#">1</a>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="bestOf" id="bestOfAll">
+                <span class="checkmark"></span>
+                <span>Все</span>
+              </label>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="bestOf" id="bestOf1">
+                <span class="checkmark"></span>
+                <span>1</span>
+              </label>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="bestOf" id="bestOf3">
+                <span class="checkmark"></span>
+                <span>3</span>
+              </label>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="bestOf" id="bestOf5">
+                <span class="checkmark"></span>
+                <span>5</span>
+              </label>
             </div>
           </div>
           <button class="profile_body_reset">Сбросить</button>
@@ -123,11 +157,11 @@
             </div>
             <div class="profile_table_cell">
               <div class="map_name">
-                <img src="../assets/mock_map.png" alt="map img" height="60" width="90">
+                <img src="../assets/mock_map.png" alt="map img" height="60" width="90" class="cell_map">
                 <span>Dust 2</span>
               </div>
               <div class="map_name">
-                <img src="../assets/fks_logo.svg" alt="avatar img" height="30" width="30">
+                <img src="../assets/fks_logo.svg" alt="avatar img" height="40" width="40" class="cell_creator">
                 <span>Система</span>
               </div>
               <span>5v5</span>
@@ -136,11 +170,11 @@
             </div>
             <div class="profile_table_cell">
               <div class="map_name">
-                <img src="../assets/mock_map.png" alt="map img" height="60" width="90">
+                <img src="../assets/mock_map.png" alt="map img" height="60" width="90" class="cell_map">
                 <span>Dust 2</span>
               </div>
               <div class="map_name">
-                <img src="../assets/fks_logo.svg" alt="avatar img" height="30" width="30">
+                <img src="../assets/fks_logo.svg" alt="avatar img" height="40" width="40" class="cell_creator">
                 <span>Система</span>
               </div>
               <span>5v5</span>
@@ -149,11 +183,11 @@
             </div>
             <div class="profile_table_cell">
               <div class="map_name">
-                <img src="../assets/mock_map.png" alt="map img" height="60" width="90">
+                <img src="../assets/mock_map.png" alt="map img" height="60" width="90" class="cell_map">
                 <span>Dust 2</span>
               </div>
               <div class="map_name">
-                <img src="../assets/fks_logo.svg" alt="avatar img" height="30" width="30">
+                <img src="../assets/fks_logo.svg" alt="avatar img" height="40" width="40" class="cell_creator">
                 <span>Система</span>
               </div>
               <span>5v5</span>

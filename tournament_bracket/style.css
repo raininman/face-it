@@ -270,6 +270,7 @@ aside ul {
 aside ul li {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 
 .tournament {
