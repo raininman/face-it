@@ -85,10 +85,14 @@
     <section class="profile_section">
       <article class="profile_header">
         <div class="avatar">
-          <img src="../assets/mock_avatar.png" alt="team avatar" height="160" width="160">
+          <img src="../assets/mock_avatar.png" alt="avatar" height="160" width="160">
         </div>
         <div class="profile_info">
           <div class="profile_info_top">
+            <div class="avatar_mobile">
+              <img src="../assets/mock_avatar.png" alt="avatar" height="70" width="70">
+              <span class="profile_nickname_mobile">nickname</span>
+            </div>
             <span class="profile_nickname">nickname</span>
             <div class="profile_registration">
               <span>Зарегистрирован:</span>
@@ -162,18 +166,52 @@
               <button class="dropbtn" id="profileModeBtn"></button>
             </div>
             <div class="menu_content_side" id="profileMode">
-              <a href="#" class="current_mode_side">5v5</a>
-              <a href="#">2v2</a>
-              <a href="#">1v1</a>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="mode" id="modeAll">
+                <span class="checkmark"></span>
+                <span>Все режимы</span>
+              </label>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="mode" id="mode5v5">
+                <span class="checkmark"></span>
+                <span>5v5</span>
+              </label>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="mode" id="mode2v2">
+                <span class="checkmark"></span>
+                <span>2v2</span>
+              </label>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="mode" id="mode1v1">
+                <span class="checkmark"></span>
+                <span>1v1</span>
+              </label>
             </div>
             <div class="profile_mode_menu_side">
-              <span>Best of</span>
+              <span class="profile_mode_menu_side_best_of">Best of</span>
               <button class="dropbtn" id="profileBestOfBtn"></button>
             </div>
             <div class="menu_content_side" id="profileBestOf">
-              <a href="#" class="current_best_of">5</a>
-              <a href="#">3</a>
-              <a href="#">1</a>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="bestOf" id="bestOfAll">
+                <span class="checkmark"></span>
+                <span>Все</span>
+              </label>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="bestOf" id="bestOf1">
+                <span class="checkmark"></span>
+                <span>1</span>
+              </label>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="bestOf" id="bestOf3">
+                <span class="checkmark"></span>
+                <span>3</span>
+              </label>
+              <label class="menu_content_side_cell">
+                <input type="checkbox" name="bestOf" id="bestOf5">
+                <span class="checkmark"></span>
+                <span>5</span>
+              </label>
             </div>
           </div>
           <button class="profile_body_reset">Сбросить</button>

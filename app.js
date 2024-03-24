@@ -23,10 +23,6 @@ burgerSideMenu.addEventListener('click', function () {
   sideMenu.classList.toggle('overlay');
 });
 
-menuBtn.addEventListener('click', function () {
-  this.classList.toggle('close');
-  modeMenu.classList.toggle('overlay');
-});
 
 profileModeBtn.addEventListener('click', function () {
   this.classList.toggle('close');
@@ -36,4 +32,9 @@ profileModeBtn.addEventListener('click', function () {
 profileBestOfBtn.addEventListener('click', function () {
   this.classList.toggle('close');
   profileBestOf.classList.toggle('overlay');
+});
+
+menuBtn.addEventListener('click', function () {
+  this.classList.toggle('close');
+  modeMenu.classList.toggle('overlay');
 });

@@ -407,6 +407,7 @@ aside ul li {
   gap: 10px;
   align-items: center;
   padding-left: 15px;
+  padding-top: 7px;
   display: block;
   position: relative;
   padding-left: 50px;
@@ -606,12 +607,4 @@ aside ul li {
   display: flex;
   gap: 14px;
   align-items: center;
-}
-
-.map_win {
-  color: #29dd1a;
-}
-
-.map_lose {
-  color: #fa0505;
 }
